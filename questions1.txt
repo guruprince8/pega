@@ -3,3 +3,13 @@
 2. What is log viewer in Pega?
 
 3. What is Pega Log Analyzer (PAL)?
+
+4. What is D Page ?
+
+5. What is service?
+
+6. What is connector?
+
+7. What is Agent?
+
+8. What is listener?
