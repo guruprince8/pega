@@ -1,0 +1,5 @@
+1. What is tracer viewer in Pega?
+
+2. What is log viewer in Pega?
+
+3. What is Pega Log Analyzer (PAL)?
