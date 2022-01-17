@@ -1,2 +1,5 @@
 /* Installation Guide */
 https://docs.pega.com/pega-crm-installation-guide/86/pega-crm-86-installation-guide 
+
+/* Implementation Guide */
+https://docs.pega.com/pega-customer-service-implementation-guide/86/pega-customer-service-implementation-guide
