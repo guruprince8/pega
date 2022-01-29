@@ -1,0 +1,2 @@
+86 customer hub installation guide
+/* https://docs.pega.com/pega-customer-decision-hub-installation-guide/86/pega-customer-decision-hub-installation-guide */
