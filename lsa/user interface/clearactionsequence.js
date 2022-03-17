@@ -11,4 +11,4 @@ function ClearActionQueue(clrActions){
   
   /* use the above function in runScript action and pass the property as input parameter to that )
   
-  /* Note - Please keep the above function in any of the JS Files acceisble to HTML element - likey in Portal level harness otherwise in Perform harness )
+  /* Note - Please keep the above function in any of the JS Files acceisble to HTML element - likey in Portal level harness otherwise in Perform harness ) */
