@@ -6,3 +6,6 @@ https://docs.pega.com/case-management/86/configuring-directed-web-access?check_l
 
 -- Collaboration
 https://collaborate.pega.com/question/dwa-access-denied
+
+-- JSP include tags
+https://docs.pega.com/sites/default/files/help_v72/jsp/include/jspinclude.htm
