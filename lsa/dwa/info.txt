@@ -1,0 +1,8 @@
+-- Pega Wiki
+https://wiki.pega.com/index.php/Handling_External_Assignments_in_Pega
+
+-- DWA
+https://docs.pega.com/case-management/86/configuring-directed-web-access?check_logged_in=1
+
+-- Collaboration
+https://collaborate.pega.com/question/dwa-access-denied
