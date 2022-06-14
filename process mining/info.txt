@@ -16,3 +16,6 @@ https://www.pega.com/insights/resources/pegaworld-inspire-2022-supercharge-your-
 
 -- Case Prediction
 https://docs.pega.com/decision-management/86/creating-predictions-case-management
+
+-- Node Types
+https://docs.pega.com/system-administration/85/node-types-premises-environments
