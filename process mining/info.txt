@@ -13,3 +13,6 @@ https://www.pega.com/events/pegaworld
 https://www.pega.com/events/pegaworld/agenda/supercharge-your-pega-workflows-process-mining-and-process-ai
 
 https://www.pega.com/insights/resources/pegaworld-inspire-2022-supercharge-your-pega-workflows-process-mining-and
+
+-- Case Prediction
+https://docs.pega.com/decision-management/86/creating-predictions-case-management
