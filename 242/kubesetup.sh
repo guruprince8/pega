@@ -21,10 +21,10 @@ helm inspect values pega/pega > pega.yaml
 helm inspect values pega/addons > addons.yaml
 helm inspect values pega/backingservices > backingservices.yaml
 
-helm install pega pega/pega --namespace pega --values values-local.yaml
 helm uninstall pega --namespace pega
-
-
+helm install pega pega/pega --namespace pega --values values-local.yaml
+kubectl exec -it pega-search-0 -n pega -- /bin/sh
+kubectl exec -it  pega-minikube-0 -n pega -- /bin/sh
 tail -f /usr/local/tomcat/logs/pega-minikube-0/PegaRULES.log
 
 
