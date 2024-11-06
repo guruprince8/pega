@@ -1,4 +1,5 @@
 sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+kubectl config use-context docker-desktop
 helm version ; helm repo list;
 kubectl create namespace pega ; kubectl create namespace pegaaddons ; kubectl create namespace pegabackingservices
 
