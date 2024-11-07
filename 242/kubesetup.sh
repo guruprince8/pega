@@ -1,15 +1,6 @@
 kubectl config use-context docker-desktop
 
 
-helm uninstall pega --namespace pega
-helm install pega pega/pega --namespace pega --values values-local.yaml
-
-
-[sudo] password for guru:
-WARNING! Using --password via the CLI is insecure. Use --password-stdin.
-WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
-Configure a credential helper to remove this warning. See
-https://docs.docker.com/engine/reference/commandline/login/#credential-stores
 
 curl http://pega-search
 {
