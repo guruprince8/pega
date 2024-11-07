@@ -16,6 +16,9 @@ helm uninstall pega --namespace pega
 helm install pega pega/pega --namespace pega --values values-local.yaml
 kubectl exec -it pega-search-0 -n pega -- /bin/sh
 kubectl exec -it  pega-minikube-0 -n pega -- /bin/sh
+tail -f /usr/local/tomcat/logs/pega-minikube-0/catalina*.log
+cat /usr/local/tomcat/logs/catalina*.log
+ls /usr/local/tomcat/logs/pega-minikube-0
 tail -f /usr/local/tomcat/logs/pega-minikube-0/PegaRULES.log
 
 [sudo] password for guru:
