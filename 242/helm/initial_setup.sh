@@ -1,0 +1,11 @@
+helm version ; helm repo list;
+
+helm install backingservices pega/backingservices --namespace pegabackingservices --values backingservices.yaml
+helm install addons pega/addons --namespace pegaaddons --values addons.yaml
+helm install pega pega/pega --namespace pega --values pega.yaml
+
+helm version
+helm repo add pega https://pegasystems.github.io/pega-helm-charts
+helm inspect values pega/pega > pega.yaml
+helm inspect values pega/addons > addons.yaml
+helm inspect values pega/backingservices > backingservices.yaml
