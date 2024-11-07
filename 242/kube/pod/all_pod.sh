@@ -126,3 +126,10 @@ Node-Selectors:              <none>
 Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
                              node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
 Events:                      <none>
+
+kubectl exec -it pega-search-0 -n pega -- /bin/sh
+kubectl exec -it  pega-minikube-0 -n pega -- /bin/sh
+tail -f /usr/local/tomcat/logs/pega-minikube-0/catalina*.log
+cat /usr/local/tomcat/logs/catalina*.log
+ls /usr/local/tomcat/logs/pega-minikube-0
+tail -f /usr/local/tomcat/logs/pega-minikube-0/PegaRULES.log
