@@ -1,3 +1,7 @@
+/* /opt/java/openjdk/lib/security */
+keytool -list -v -keystore cacerts
+
+
 /* kubectl exec -it pega-minikube-0 -n pega -- /bin/sh
 curl -v http://pega-search
 */
