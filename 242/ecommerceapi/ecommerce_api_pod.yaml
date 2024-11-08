@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: ecommerce
   labels:
-    app: ecommerce
+    app: ecommerceapi
 spec:
   containers:
   - name: ecommerce
