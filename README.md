@@ -21,5 +21,7 @@ Each folder consists the yaml files applicable to specific product version and e
  <li>Install Postgres 15 - please refer link <a href="https://www.postgresql.org/download/">Postgres Installation </a></li>
  <li>Install Helm Package Manager - please refer link <a href="https://helm.sh/docs/intro/install/">Install Helm</a></li>
  <li>Install Kubectl - please refer link <a href="https://kubernetes.io/docs/tasks/tools/">Install Kubernets</a></li>
+
+ <h2>Lauch External Kafka Environment</h2>
  
 
