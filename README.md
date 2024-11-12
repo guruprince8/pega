@@ -9,7 +9,7 @@ Each folder consists the yaml files applicatable to specific product version and
  <li>20GB RAM</li>
  <li>100TB Hard Disk </li>
  
-<h2>Hardware Requirements - All Environments </h2>
+<h2>Hardware Requirements - All Environments matching SDLC</h2>
  <li>64GB RAM</li>
  <li>1TB Hard Disk </li>
 
