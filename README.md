@@ -1,5 +1,5 @@
 # Pega
-This git repo describes about the series steps involved in managing a Pega environment locally using kubernets enviornment like docker desktop or minikube. 
+This git repo describes about the series steps involved in setting up a Pega environment locally using open source kubernets enviornment ( docker desktop or minikube ). 
 
 As the <a href="https://docs.pega.com/bundle/platform/page/platform/hub/platform-install-update.html"> product documenation </a> from Pega in future no longer the virtual deployment is supported.
 
