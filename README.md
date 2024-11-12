@@ -4,6 +4,6 @@ This git repo describes about the series steps involved in managing a Pega envir
 Each folder consists the yaml files applicatable to specific product version and environments ( dev, sit, and etc.. )
 
 Prequisites
- <li>Installing Docker Desktop - please refer link <a href="https://docs.docker.com/desktop/>Docker Desktop</a></li>
+ <li>Installing Docker Desktop - please refer link <a href="https://docs.docker.com/desktop/">Docker Desktop</a></li>
  <li>Installing Minikube</li>
 
