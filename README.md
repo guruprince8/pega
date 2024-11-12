@@ -23,5 +23,6 @@ Each folder consists the yaml files applicable to specific product version and e
  <li>Install Kubectl - please refer link <a href="https://kubernetes.io/docs/tasks/tools/">Install Kubernets</a></li>
 
  <h2>Lauch External Kafka Environment</h2>
- 
+ As Pega manadated to use external kafka environment and applied the following steps to launch a external kafka environment in kubernets cluster in the same namespace.
+ <a href="https://github.com/guruprince8/pega/blob/main/242/kafka/kafka_setup_helm.sh"> Set Up External Kafka </a>
 
