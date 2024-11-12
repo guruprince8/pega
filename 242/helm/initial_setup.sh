@@ -25,6 +25,7 @@ helm uninstall pega-e2e --namespace pega-cert
 helm install pega-e2e pega/pega --namespace pega-prod --values values-local-e2e.yaml
 kubectl exec -it pega-search-0 -n pega-e2e -- /bin/sh
 kubectl exec -it pega-minikube-0 -n pega-e2e -- /bin/sh
+helm upgrade pega-prod pega/pega --namespace pega-prod --values values-local-prod.yaml
 
 
 
