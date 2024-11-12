@@ -1,7 +1,7 @@
 # Pega
 This git repo describes about the series steps involved in managing a Pega environment locally using kubernets enviornment like docker desktop or minikube. 
 
-As the <a href="https://docs.pega.com/bundle/platform/page/platform/hub/platform-install-update.html"> product documenation </a> from Pega in future no longer the virutal deployment is supported.
+As the <a href="https://docs.pega.com/bundle/platform/page/platform/hub/platform-install-update.html"> product documenation </a> from Pega in future no longer the virtual deployment is supported.
 
 Each folder consists the yaml files applicatable to specific product version and environments ( dev, sit, and etc.. )
 
