@@ -2,7 +2,7 @@
 This git repo describes about the series steps involved in setting up a Pega environment locally using open source kubernets enviornment ( docker desktop or minikube ). Please use either docker desktop or minikube as per the preference. 
 
 <h2>Points To Note</h2>
-One keything obsevered when docker desktop leveraged upon restart of environment kubernets cluster is auto launched which avoids manual launch of environment.
+One keything obsevered when docker desktop leveraged upon restart of environment kubernets cluster is auto launched which avoids manual intervention.
 <h2> Pega Platform Release Notes </h2>
 As the <a href="https://docs.pega.com/bundle/platform/page/platform/hub/platform-install-update.html"> product documenation </a> from Pega in future no longer the virtual deployment is supported.
 Each folder consists the yaml files applicable to specific product version and environments ( dev, sit, and etc.. ). Please refer and use the configuration files as per the need.
