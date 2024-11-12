@@ -3,7 +3,7 @@ This git repo describes about the series steps involved in managing a Pega envir
 
 As the <a href="https://docs.pega.com/bundle/platform/page/platform/hub/platform-install-update.html"> product documenation </a> from Pega in future no longer the virtual deployment is supported.
 
-Each folder consists the yaml files applicatable to specific product version and environments ( dev, sit, and etc.. )
+Each folder consists the yaml files applicable to specific product version and environments ( dev, sit, and etc.. ). Please refer and use the configuration files as per the need.
 
 <h2>Hardware Requirements - Single Environment </h2>
  <li>20GB RAM</li>
