@@ -6,11 +6,11 @@ helm inspect values pega/backingservices > backingservices.yaml
 helm repo list
 
 /* DEV Environment */
-helm uninstall pega --namespace pega
-helm install pega pega/pega --namespace pega --values values-local.yaml
+helm uninstall pega-dev --namespace pega-dev
+helm install pega-dev pega/pega --namespace pega-dev --values values-local-dev.yaml
 helm install backingservices pega/backingservices --namespace pegabackingservices --values backingservices.yaml
 helm install addons pega/addons --namespace pegaaddons --values addons.yaml
-helm install pega pega/pega --namespace pega --values pega.yaml
+helm install pega-dev pega/pega --namespace pega-dev --values pega.yaml
 tail -f /usr/local/tomcat/logs/pega-minikube-0/PegaRULES.log
 
 
