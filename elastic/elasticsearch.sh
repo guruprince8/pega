@@ -35,11 +35,11 @@ network.host: node1.elastic.test.com
 xpack.security.enabled: true
 xpack.security.http.ssl.enabled: true
 xpack.security.transport.ssl.enabled: true
-xpack.security.http.ssl.key: certs/node1.key
-xpack.security.http.ssl.certificate: certs/node1.crt
-xpack.security.http.ssl.certificate_authorities: certs/ca.crt
-xpack.security.transport.ssl.key: certs/node1.key
-xpack.security.transport.ssl.certificate: certs/node1.crt
-xpack.security.transport.ssl.certificate_authorities: certs/ca.crt
+xpack.security.http.ssl.key: /home/guru/pega/certs/tomcat.key
+xpack.security.http.ssl.certificate: /home/guru/pega/certs/tomcat.crt
+xpack.security.http.ssl.certificate_authorities: /home/guru/pega/certs/ca.crt
+xpack.security.transport.ssl.key: /home/guru/pega/certs/tomcat.key
+xpack.security.transport.ssl.certificate: /home/guru/pega/certs/tomcat.crt
+xpack.security.transport.ssl.certificate_authorities: /home/guru/pega/certs/ca.crt
 discovery.seed_hosts: [ "node1.elastic.test.com" ]
 cluster.initial_master_nodes: [ "node1" ]
