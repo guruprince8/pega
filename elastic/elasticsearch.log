@@ -1,0 +1,253 @@
+# cat /var/log/elasticsearch/elasticsearch.log
+
+[2024-11-23T08:09:49,549][INFO ][o.e.n.Node               ] [allendc630] version[7.17.25], pid[2643], build[default/deb/f9b6b57d1d0f76e2d14291c04fb50abeb642cfbf/2024-10-16T22:06:36.904732810Z], OS[Linux/6.8.0-48-generic/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/22.0.1/22.0.1+8-16]
+[2024-11-23T08:09:49,632][INFO ][o.e.n.Node               ] [allendc630] JVM home [/usr/share/elasticsearch/jdk], using bundled JDK [true]
+[2024-11-23T08:09:49,633][INFO ][o.e.n.Node               ] [allendc630] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -Djava.security.manager=allow, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-12241846712040890976, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=/var/lib/elasticsearch, -XX:ErrorFile=/var/log/elasticsearch/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=/var/log/elasticsearch/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:+UnlockDiagnosticVMOptions, -XX:G1NumCollectionsKeepPinned=10000000, -Xms31744m, -Xmx31744m, -XX:MaxDirectMemorySize=16642998272, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=25, -Des.path.home=/usr/share/elasticsearch, -Des.path.conf=/etc/elasticsearch, -Des.distribution.flavor=default, -Des.distribution.type=deb, -Des.bundled_jdk=true]
+[2024-11-23T08:09:58,183][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [aggs-matrix-stats]
+[2024-11-23T08:09:58,184][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [analysis-common]
+[2024-11-23T08:09:58,184][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [constant-keyword]
+[2024-11-23T08:09:58,185][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [frozen-indices]
+[2024-11-23T08:09:58,185][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [ingest-common]
+[2024-11-23T08:09:58,185][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [ingest-geoip]
+[2024-11-23T08:09:58,186][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [ingest-user-agent]
+[2024-11-23T08:09:58,186][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [kibana]
+[2024-11-23T08:09:58,186][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [lang-expression]
+[2024-11-23T08:09:58,187][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [lang-mustache]
+[2024-11-23T08:09:58,187][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [lang-painless]
+[2024-11-23T08:09:58,188][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [legacy-geo]
+[2024-11-23T08:09:58,188][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [mapper-extras]
+[2024-11-23T08:09:58,188][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [mapper-version]
+[2024-11-23T08:09:58,189][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [parent-join]
+[2024-11-23T08:09:58,189][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [percolator]
+[2024-11-23T08:09:58,189][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [rank-eval]
+[2024-11-23T08:09:58,190][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [reindex]
+[2024-11-23T08:09:58,190][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [repositories-metering-api]
+[2024-11-23T08:09:58,190][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [repository-encrypted]
+[2024-11-23T08:09:58,190][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [repository-url]
+[2024-11-23T08:09:58,191][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [runtime-fields-common]
+[2024-11-23T08:09:58,191][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [search-business-rules]
+[2024-11-23T08:09:58,191][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [searchable-snapshots]
+[2024-11-23T08:09:58,191][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [snapshot-repo-test-kit]
+[2024-11-23T08:09:58,192][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [spatial]
+[2024-11-23T08:09:58,192][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [systemd]
+[2024-11-23T08:09:58,192][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [transform]
+[2024-11-23T08:09:58,192][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [transport-netty4]
+[2024-11-23T08:09:58,193][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [unsigned-long]
+[2024-11-23T08:09:58,193][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [vector-tile]
+[2024-11-23T08:09:58,193][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [vectors]
+[2024-11-23T08:09:58,193][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [wildcard]
+[2024-11-23T08:09:58,194][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-aggregate-metric]
+[2024-11-23T08:09:58,194][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-analytics]
+[2024-11-23T08:09:58,194][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-async]
+[2024-11-23T08:09:58,194][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-async-search]
+[2024-11-23T08:09:58,195][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-autoscaling]
+[2024-11-23T08:09:58,195][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-ccr]
+[2024-11-23T08:09:58,195][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-core]
+[2024-11-23T08:09:58,196][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-data-streams]
+[2024-11-23T08:09:58,196][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-deprecation]
+[2024-11-23T08:09:58,196][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-enrich]
+[2024-11-23T08:09:58,196][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-eql]
+[2024-11-23T08:09:58,197][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-fleet]
+[2024-11-23T08:09:58,197][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-graph]
+[2024-11-23T08:09:58,197][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-identity-provider]
+[2024-11-23T08:09:58,197][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-ilm]
+[2024-11-23T08:09:58,198][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-logstash]
+[2024-11-23T08:09:58,198][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-ml]
+[2024-11-23T08:09:58,198][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-monitoring]
+[2024-11-23T08:09:58,198][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-ql]
+[2024-11-23T08:09:58,198][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-rollup]
+[2024-11-23T08:09:58,199][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-security]
+[2024-11-23T08:09:58,199][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-shutdown]
+[2024-11-23T08:09:58,199][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-sql]
+[2024-11-23T08:09:58,199][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-stack]
+[2024-11-23T08:09:58,200][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-text-structure]
+[2024-11-23T08:09:58,200][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-voting-only-node]
+[2024-11-23T08:09:58,200][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-watcher]
+[2024-11-23T08:09:58,201][INFO ][o.e.p.PluginsService     ] [allendc630] no plugins loaded
+[2024-11-23T08:09:58,288][INFO ][o.e.e.NodeEnvironment    ] [allendc630] using [1] data paths, mounts [[/ (/dev/sda2)]], net usable_space [2.3tb], net total_space [2.6tb], types [ext4]
+[2024-11-23T08:09:58,288][INFO ][o.e.e.NodeEnvironment    ] [allendc630] heap size [31gb], compressed ordinary object pointers [true]
+[2024-11-23T08:09:58,492][INFO ][o.e.n.Node               ] [allendc630] node name [allendc630], node ID [G0FVG8-pRYW_z68rPR1tEA], cluster name [elasticsearch], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2024-11-23T08:10:05,935][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [allendc630] [controller/3959] [Main.cc@122] controller (64 bit): Version 7.17.25 (Build f0ca25bfe79ea3) Copyright (c) 2024 Elasticsearch BV
+[2024-11-23T08:10:06,563][INFO ][o.e.x.s.a.s.FileRolesStore] [allendc630] parsed [0] roles from file [/etc/elasticsearch/roles.yml]
+[2024-11-23T08:10:07,684][INFO ][o.e.i.g.ConfigDatabases  ] [allendc630] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/etc/elasticsearch/ingest-geoip] for changes
+[2024-11-23T08:10:07,685][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] initialized database registry, using geoip-databases directory [/tmp/elasticsearch-12241846712040890976/geoip-databases/G0FVG8-pRYW_z68rPR1tEA]
+[2024-11-23T08:10:08,698][INFO ][o.e.t.NettyAllocator     ] [allendc630] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=16mb}]
+[2024-11-23T08:10:08,761][INFO ][o.e.i.r.RecoverySettings ] [allendc630] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+[2024-11-23T08:10:08,803][INFO ][o.e.d.DiscoveryModule    ] [allendc630] using discovery type [zen] and seed hosts providers [settings]
+[2024-11-23T08:10:09,379][INFO ][o.e.g.DanglingIndicesState] [allendc630] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2024-11-23T08:10:10,228][INFO ][o.e.n.Node               ] [allendc630] initialized
+[2024-11-23T08:10:10,229][INFO ][o.e.n.Node               ] [allendc630] starting ...
+[2024-11-23T08:10:10,240][INFO ][o.e.x.s.c.f.PersistentCache] [allendc630] persistent cache index loaded
+[2024-11-23T08:10:10,240][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [allendc630] deprecation component started
+[2024-11-23T08:10:10,616][INFO ][o.e.t.TransportService   ] [allendc630] publish_address {192.168.1.223:9300}, bound_addresses {[::]:9300}
+[2024-11-23T08:10:11,325][INFO ][o.e.b.BootstrapChecks    ] [allendc630] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2024-11-23T08:10:11,402][INFO ][o.e.c.c.Coordinator      ] [allendc630] cluster UUID [uAsdRIcsRY-D-rGKf5tRAA]
+[2024-11-23T08:10:11,426][WARN ][o.e.d.SeedHostsResolver  ] [allendc630] failed to resolve host [::0]
+java.lang.IllegalArgumentException: IPv6 addresses must be bracketed: ::0
+	at org.elasticsearch.transport.TcpTransport.parse(TcpTransport.java:587) ~[elasticsearch-7.17.25.jar:7.17.25]
+	at org.elasticsearch.transport.TcpTransport.addressesFromString(TcpTransport.java:542) ~[elasticsearch-7.17.25.jar:7.17.25]
+	at org.elasticsearch.transport.TransportService.addressesFromString(TransportService.java:1111) ~[elasticsearch-7.17.25.jar:7.17.25]
+	at org.elasticsearch.discovery.SeedHostsResolver.lambda$resolveHostsLists$0(SeedHostsResolver.java:152) ~[elasticsearch-7.17.25.jar:7.17.25]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:718) ~[elasticsearch-7.17.25.jar:7.17.25]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+[2024-11-23T08:10:11,707][INFO ][o.e.c.s.MasterService    ] [allendc630] elected-as-master ([1] nodes joined)[{allendc630}{G0FVG8-pRYW_z68rPR1tEA}{PrzNoc95TYavq5_xEX56dA}{192.168.1.223}{192.168.1.223:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 10, version: 119, delta: master node changed {previous [], current [{allendc630}{G0FVG8-pRYW_z68rPR1tEA}{PrzNoc95TYavq5_xEX56dA}{192.168.1.223}{192.168.1.223:9300}{cdfhilmrstw}]}
+[2024-11-23T08:10:11,982][INFO ][o.e.c.s.ClusterApplierService] [allendc630] master node changed {previous [], current [{allendc630}{G0FVG8-pRYW_z68rPR1tEA}{PrzNoc95TYavq5_xEX56dA}{192.168.1.223}{192.168.1.223:9300}{cdfhilmrstw}]}, term: 10, version: 119, reason: Publication{term=10, version=119}
+[2024-11-23T08:10:12,056][INFO ][o.e.h.AbstractHttpServerTransport] [allendc630] publish_address {192.168.1.223:9200}, bound_addresses {[::]:9200}
+[2024-11-23T08:10:12,057][INFO ][o.e.n.Node               ] [allendc630] started
+[2024-11-23T08:10:12,497][INFO ][o.e.l.LicenseService     ] [allendc630] license [be2db4a8-7854-4a47-a2cc-12afef1bdb34] mode [basic] - valid
+[2024-11-23T08:10:12,499][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [allendc630] Active license is now [BASIC]; Security is disabled
+[2024-11-23T08:10:12,499][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [allendc630] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+[2024-11-23T08:10:12,534][INFO ][o.e.g.GatewayService     ] [allendc630] recovered [3] indices into cluster_state
+[2024-11-23T08:10:13,021][ERROR][o.e.i.g.GeoIpDownloader  ] [allendc630] exception during geoip databases update
+org.elasticsearch.ElasticsearchException: not all primary shards of [.geoip_databases] index are active
+	at org.elasticsearch.ingest.geoip.GeoIpDownloader.updateDatabases(GeoIpDownloader.java:137) ~[ingest-geoip-7.17.25.jar:7.17.25]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloader.runDownloader(GeoIpDownloader.java:284) [ingest-geoip-7.17.25.jar:7.17.25]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskExecutor.java:100) [ingest-geoip-7.17.25.jar:7.17.25]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskExecutor.java:46) [ingest-geoip-7.17.25.jar:7.17.25]
+	at org.elasticsearch.persistent.NodePersistentTasksExecutor$1.doRun(NodePersistentTasksExecutor.java:42) [elasticsearch-7.17.25.jar:7.17.25]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) [elasticsearch-7.17.25.jar:7.17.25]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) [elasticsearch-7.17.25.jar:7.17.25]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+[2024-11-23T08:10:13,393][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] retrieve geoip database [GeoLite2-Country.mmdb] from [.geoip_databases] to [/tmp/elasticsearch-12241846712040890976/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-Country.mmdb.tmp.gz]
+[2024-11-23T08:10:13,396][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] retrieve geoip database [GeoLite2-City.mmdb] from [.geoip_databases] to [/tmp/elasticsearch-12241846712040890976/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-City.mmdb.tmp.gz]
+[2024-11-23T08:10:13,396][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] retrieve geoip database [GeoLite2-ASN.mmdb] from [.geoip_databases] to [/tmp/elasticsearch-12241846712040890976/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-ASN.mmdb.tmp.gz]
+[2024-11-23T08:10:13,432][INFO ][o.e.c.r.a.AllocationService] [allendc630] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2024.11.06-000001][0]]]).
+[2024-11-23T08:10:13,769][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] successfully reloaded changed geoip database file [/tmp/elasticsearch-12241846712040890976/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-Country.mmdb]
+[2024-11-23T08:10:13,834][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] successfully reloaded changed geoip database file [/tmp/elasticsearch-12241846712040890976/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-ASN.mmdb]
+[2024-11-23T08:10:14,831][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] successfully reloaded changed geoip database file [/tmp/elasticsearch-12241846712040890976/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-City.mmdb]
+[2024-11-23T08:11:48,495][INFO ][o.e.n.Node               ] [allendc630] stopping ...
+[2024-11-23T08:11:48,498][INFO ][o.e.x.w.WatcherService   ] [allendc630] stopping watch service, reason [shutdown initiated]
+[2024-11-23T08:11:48,499][INFO ][o.e.x.w.WatcherLifeCycleService] [allendc630] watcher has stopped and shutdown
+[2024-11-23T08:11:48,499][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [allendc630] [controller/3959] [Main.cc@174] ML controller exiting
+[2024-11-23T08:11:48,500][INFO ][o.e.x.m.p.NativeController] [allendc630] Native controller process has stopped - no new native processes can be started
+[2024-11-23T08:11:48,702][INFO ][o.e.n.Node               ] [allendc630] stopped
+[2024-11-23T08:11:48,702][INFO ][o.e.n.Node               ] [allendc630] closing ...
+[2024-11-23T08:11:48,715][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [allendc630] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-12241846712040890976/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-Country.mmdb]
+[2024-11-23T08:11:48,715][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [allendc630] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-12241846712040890976/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-ASN.mmdb]
+[2024-11-23T08:11:48,715][INFO ][o.e.i.g.DatabaseReaderLazyLoader] [allendc630] evicted [0] entries from cache after reloading database [/tmp/elasticsearch-12241846712040890976/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-City.mmdb]
+[2024-11-23T08:11:48,718][INFO ][o.e.n.Node               ] [allendc630] closed
+[2024-11-23T08:14:21,459][INFO ][o.e.n.Node               ] [allendc630] version[7.17.25], pid[2547], build[default/deb/f9b6b57d1d0f76e2d14291c04fb50abeb642cfbf/2024-10-16T22:06:36.904732810Z], OS[Linux/6.8.0-48-generic/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/22.0.1/22.0.1+8-16]
+[2024-11-23T08:14:21,492][INFO ][o.e.n.Node               ] [allendc630] JVM home [/usr/share/elasticsearch/jdk], using bundled JDK [true]
+[2024-11-23T08:14:21,493][INFO ][o.e.n.Node               ] [allendc630] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -XX:+ShowCodeDetailsInExceptionMessages, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j2.formatMsgNoLookups=true, -Djava.locale.providers=SPI,COMPAT, --add-opens=java.base/java.io=ALL-UNNAMED, -Djava.security.manager=allow, -XX:+UseG1GC, -Djava.io.tmpdir=/tmp/elasticsearch-14653625935765999540, -XX:+HeapDumpOnOutOfMemoryError, -XX:+ExitOnOutOfMemoryError, -XX:HeapDumpPath=/var/lib/elasticsearch, -XX:ErrorFile=/var/log/elasticsearch/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=/var/log/elasticsearch/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:+UnlockDiagnosticVMOptions, -XX:G1NumCollectionsKeepPinned=10000000, -Xms31744m, -Xmx31744m, -XX:MaxDirectMemorySize=16642998272, -XX:InitiatingHeapOccupancyPercent=30, -XX:G1ReservePercent=25, -Des.path.home=/usr/share/elasticsearch, -Des.path.conf=/etc/elasticsearch, -Des.distribution.flavor=default, -Des.distribution.type=deb, -Des.bundled_jdk=true]
+[2024-11-23T08:14:35,449][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [aggs-matrix-stats]
+[2024-11-23T08:14:35,450][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [analysis-common]
+[2024-11-23T08:14:35,450][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [constant-keyword]
+[2024-11-23T08:14:35,451][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [frozen-indices]
+[2024-11-23T08:14:35,451][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [ingest-common]
+[2024-11-23T08:14:35,452][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [ingest-geoip]
+[2024-11-23T08:14:35,452][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [ingest-user-agent]
+[2024-11-23T08:14:35,452][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [kibana]
+[2024-11-23T08:14:35,453][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [lang-expression]
+[2024-11-23T08:14:35,453][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [lang-mustache]
+[2024-11-23T08:14:35,454][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [lang-painless]
+[2024-11-23T08:14:35,454][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [legacy-geo]
+[2024-11-23T08:14:35,455][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [mapper-extras]
+[2024-11-23T08:14:35,455][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [mapper-version]
+[2024-11-23T08:14:35,456][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [parent-join]
+[2024-11-23T08:14:35,456][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [percolator]
+[2024-11-23T08:14:35,456][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [rank-eval]
+[2024-11-23T08:14:35,457][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [reindex]
+[2024-11-23T08:14:35,457][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [repositories-metering-api]
+[2024-11-23T08:14:35,458][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [repository-encrypted]
+[2024-11-23T08:14:35,458][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [repository-url]
+[2024-11-23T08:14:35,458][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [runtime-fields-common]
+[2024-11-23T08:14:35,459][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [search-business-rules]
+[2024-11-23T08:14:35,459][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [searchable-snapshots]
+[2024-11-23T08:14:35,460][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [snapshot-repo-test-kit]
+[2024-11-23T08:14:35,460][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [spatial]
+[2024-11-23T08:14:35,460][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [systemd]
+[2024-11-23T08:14:35,461][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [transform]
+[2024-11-23T08:14:35,461][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [transport-netty4]
+[2024-11-23T08:14:35,462][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [unsigned-long]
+[2024-11-23T08:14:35,462][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [vector-tile]
+[2024-11-23T08:14:35,463][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [vectors]
+[2024-11-23T08:14:35,463][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [wildcard]
+[2024-11-23T08:14:35,463][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-aggregate-metric]
+[2024-11-23T08:14:35,464][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-analytics]
+[2024-11-23T08:14:35,464][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-async]
+[2024-11-23T08:14:35,465][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-async-search]
+[2024-11-23T08:14:35,465][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-autoscaling]
+[2024-11-23T08:14:35,465][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-ccr]
+[2024-11-23T08:14:35,466][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-core]
+[2024-11-23T08:14:35,466][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-data-streams]
+[2024-11-23T08:14:35,467][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-deprecation]
+[2024-11-23T08:14:35,467][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-enrich]
+[2024-11-23T08:14:35,467][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-eql]
+[2024-11-23T08:14:35,468][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-fleet]
+[2024-11-23T08:14:35,468][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-graph]
+[2024-11-23T08:14:35,468][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-identity-provider]
+[2024-11-23T08:14:35,469][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-ilm]
+[2024-11-23T08:14:35,469][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-logstash]
+[2024-11-23T08:14:35,470][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-ml]
+[2024-11-23T08:14:35,470][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-monitoring]
+[2024-11-23T08:14:35,470][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-ql]
+[2024-11-23T08:14:35,471][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-rollup]
+[2024-11-23T08:14:35,471][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-security]
+[2024-11-23T08:14:35,471][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-shutdown]
+[2024-11-23T08:14:35,472][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-sql]
+[2024-11-23T08:14:35,472][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-stack]
+[2024-11-23T08:14:35,473][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-text-structure]
+[2024-11-23T08:14:35,473][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-voting-only-node]
+[2024-11-23T08:14:35,474][INFO ][o.e.p.PluginsService     ] [allendc630] loaded module [x-pack-watcher]
+[2024-11-23T08:14:35,474][INFO ][o.e.p.PluginsService     ] [allendc630] no plugins loaded
+[2024-11-23T08:14:35,786][INFO ][o.e.e.NodeEnvironment    ] [allendc630] using [1] data paths, mounts [[/ (/dev/sda2)]], net usable_space [2.3tb], net total_space [2.6tb], types [ext4]
+[2024-11-23T08:14:35,787][INFO ][o.e.e.NodeEnvironment    ] [allendc630] heap size [31gb], compressed ordinary object pointers [true]
+[2024-11-23T08:14:36,203][INFO ][o.e.n.Node               ] [allendc630] node name [allendc630], node ID [G0FVG8-pRYW_z68rPR1tEA], cluster name [elasticsearch], roles [transform, data_frozen, master, remote_cluster_client, data, ml, data_content, data_hot, data_warm, data_cold, ingest]
+[2024-11-23T08:14:45,205][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [allendc630] [controller/3850] [Main.cc@122] controller (64 bit): Version 7.17.25 (Build f0ca25bfe79ea3) Copyright (c) 2024 Elasticsearch BV
+[2024-11-23T08:14:46,137][INFO ][o.e.x.s.a.s.FileRolesStore] [allendc630] parsed [0] roles from file [/etc/elasticsearch/roles.yml]
+[2024-11-23T08:14:48,044][INFO ][o.e.i.g.ConfigDatabases  ] [allendc630] initialized default databases [[GeoLite2-Country.mmdb, GeoLite2-City.mmdb, GeoLite2-ASN.mmdb]], config databases [[]] and watching [/etc/elasticsearch/ingest-geoip] for changes
+[2024-11-23T08:14:48,047][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] initialized database registry, using geoip-databases directory [/tmp/elasticsearch-14653625935765999540/geoip-databases/G0FVG8-pRYW_z68rPR1tEA]
+[2024-11-23T08:14:50,208][INFO ][o.e.t.NettyAllocator     ] [allendc630] creating NettyAllocator with the following configs: [name=elasticsearch_configured, chunk_size=1mb, suggested_max_allocation_size=1mb, factors={es.unsafe.use_netty_default_chunk_and_page_size=false, g1gc_enabled=true, g1gc_region_size=16mb}]
+[2024-11-23T08:14:50,397][INFO ][o.e.i.r.RecoverySettings ] [allendc630] using rate limit [40mb] with [default=40mb, read=0b, write=0b, max=0b]
+[2024-11-23T08:14:50,449][INFO ][o.e.d.DiscoveryModule    ] [allendc630] using discovery type [zen] and seed hosts providers [settings]
+[2024-11-23T08:14:51,539][INFO ][o.e.g.DanglingIndicesState] [allendc630] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+[2024-11-23T08:14:52,926][INFO ][o.e.n.Node               ] [allendc630] initialized
+[2024-11-23T08:14:52,926][INFO ][o.e.n.Node               ] [allendc630] starting ...
+[2024-11-23T08:14:52,938][INFO ][o.e.x.s.c.f.PersistentCache] [allendc630] persistent cache index loaded
+[2024-11-23T08:14:52,939][INFO ][o.e.x.d.l.DeprecationIndexingComponent] [allendc630] deprecation component started
+[2024-11-23T08:14:53,419][INFO ][o.e.t.TransportService   ] [allendc630] publish_address {192.168.1.223:9300}, bound_addresses {[::]:9300}
+[2024-11-23T08:14:54,196][INFO ][o.e.b.BootstrapChecks    ] [allendc630] bound or publishing to a non-loopback address, enforcing bootstrap checks
+[2024-11-23T08:14:54,232][INFO ][o.e.c.c.Coordinator      ] [allendc630] cluster UUID [uAsdRIcsRY-D-rGKf5tRAA]
+[2024-11-23T08:14:54,243][WARN ][o.e.d.SeedHostsResolver  ] [allendc630] failed to resolve host [::0]
+java.lang.IllegalArgumentException: IPv6 addresses must be bracketed: ::0
+	at org.elasticsearch.transport.TcpTransport.parse(TcpTransport.java:587) ~[elasticsearch-7.17.25.jar:7.17.25]
+	at org.elasticsearch.transport.TcpTransport.addressesFromString(TcpTransport.java:542) ~[elasticsearch-7.17.25.jar:7.17.25]
+	at org.elasticsearch.transport.TransportService.addressesFromString(TransportService.java:1111) ~[elasticsearch-7.17.25.jar:7.17.25]
+	at org.elasticsearch.discovery.SeedHostsResolver.lambda$resolveHostsLists$0(SeedHostsResolver.java:152) ~[elasticsearch-7.17.25.jar:7.17.25]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:718) ~[elasticsearch-7.17.25.jar:7.17.25]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+[2024-11-23T08:14:54,370][INFO ][o.e.c.s.MasterService    ] [allendc630] elected-as-master ([1] nodes joined)[{allendc630}{G0FVG8-pRYW_z68rPR1tEA}{jEZ3sekcRi6hnq0Q3MZxBw}{192.168.1.223}{192.168.1.223:9300}{cdfhilmrstw} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 11, version: 127, delta: master node changed {previous [], current [{allendc630}{G0FVG8-pRYW_z68rPR1tEA}{jEZ3sekcRi6hnq0Q3MZxBw}{192.168.1.223}{192.168.1.223:9300}{cdfhilmrstw}]}
+[2024-11-23T08:14:54,457][INFO ][o.e.c.s.ClusterApplierService] [allendc630] master node changed {previous [], current [{allendc630}{G0FVG8-pRYW_z68rPR1tEA}{jEZ3sekcRi6hnq0Q3MZxBw}{192.168.1.223}{192.168.1.223:9300}{cdfhilmrstw}]}, term: 11, version: 127, reason: Publication{term=11, version=127}
+[2024-11-23T08:14:54,860][INFO ][o.e.h.AbstractHttpServerTransport] [allendc630] publish_address {192.168.1.223:9200}, bound_addresses {[::]:9200}
+[2024-11-23T08:14:54,861][INFO ][o.e.n.Node               ] [allendc630] started
+[2024-11-23T08:14:55,485][INFO ][o.e.l.LicenseService     ] [allendc630] license [be2db4a8-7854-4a47-a2cc-12afef1bdb34] mode [basic] - valid
+[2024-11-23T08:14:55,487][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [allendc630] Active license is now [BASIC]; Security is disabled
+[2024-11-23T08:14:55,488][WARN ][o.e.x.s.s.SecurityStatusChangeListener] [allendc630] Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+[2024-11-23T08:14:55,587][INFO ][o.e.g.GatewayService     ] [allendc630] recovered [3] indices into cluster_state
+[2024-11-23T08:14:56,173][ERROR][o.e.i.g.GeoIpDownloader  ] [allendc630] exception during geoip databases update
+org.elasticsearch.ElasticsearchException: not all primary shards of [.geoip_databases] index are active
+	at org.elasticsearch.ingest.geoip.GeoIpDownloader.updateDatabases(GeoIpDownloader.java:137) ~[ingest-geoip-7.17.25.jar:7.17.25]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloader.runDownloader(GeoIpDownloader.java:284) [ingest-geoip-7.17.25.jar:7.17.25]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskExecutor.java:100) [ingest-geoip-7.17.25.jar:7.17.25]
+	at org.elasticsearch.ingest.geoip.GeoIpDownloaderTaskExecutor.nodeOperation(GeoIpDownloaderTaskExecutor.java:46) [ingest-geoip-7.17.25.jar:7.17.25]
+	at org.elasticsearch.persistent.NodePersistentTasksExecutor$1.doRun(NodePersistentTasksExecutor.java:42) [elasticsearch-7.17.25.jar:7.17.25]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:777) [elasticsearch-7.17.25.jar:7.17.25]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:26) [elasticsearch-7.17.25.jar:7.17.25]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) [?:?]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+[2024-11-23T08:14:56,727][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] retrieve geoip database [GeoLite2-Country.mmdb] from [.geoip_databases] to [/tmp/elasticsearch-14653625935765999540/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-Country.mmdb.tmp.gz]
+[2024-11-23T08:14:56,729][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] retrieve geoip database [GeoLite2-City.mmdb] from [.geoip_databases] to [/tmp/elasticsearch-14653625935765999540/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-City.mmdb.tmp.gz]
+[2024-11-23T08:14:56,730][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] retrieve geoip database [GeoLite2-ASN.mmdb] from [.geoip_databases] to [/tmp/elasticsearch-14653625935765999540/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-ASN.mmdb.tmp.gz]
+[2024-11-23T08:14:57,235][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] successfully reloaded changed geoip database file [/tmp/elasticsearch-14653625935765999540/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-Country.mmdb]
+[2024-11-23T08:14:57,280][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] successfully reloaded changed geoip database file [/tmp/elasticsearch-14653625935765999540/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-ASN.mmdb]
+[2024-11-23T08:14:57,305][INFO ][o.e.c.r.a.AllocationService] [allendc630] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.ds-.logs-deprecation.elasticsearch-default-2024.11.06-000001][0]]]).
+[2024-11-23T08:14:58,930][INFO ][o.e.i.g.DatabaseNodeService] [allendc630] successfully reloaded changed geoip database file [/tmp/elasticsearch-14653625935765999540/geoip-databases/G0FVG8-pRYW_z68rPR1tEA/GeoLite2-City.mmdb]
