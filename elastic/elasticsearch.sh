@@ -27,3 +27,19 @@ curl -X PUT -H "Content-Type: application/json"  'localhost:9200/tutorial/hellow
 }'
 
 curl -X GET -H "Content-Type: application/json" 'http://localhost:9200/tutorial/helloworld/1?pretty'
+
+# configuring TLS
+# https://www.elastic.co/blog/configuring-ssl-tls-and-https-to-secure-elasticsearch-kibana-beats-and-logstash
+node.name: node1
+network.host: node1.elastic.test.com
+xpack.security.enabled: true
+xpack.security.http.ssl.enabled: true
+xpack.security.transport.ssl.enabled: true
+xpack.security.http.ssl.key: certs/node1.key
+xpack.security.http.ssl.certificate: certs/node1.crt
+xpack.security.http.ssl.certificate_authorities: certs/ca.crt
+xpack.security.transport.ssl.key: certs/node1.key
+xpack.security.transport.ssl.certificate: certs/node1.crt
+xpack.security.transport.ssl.certificate_authorities: certs/ca.crt
+discovery.seed_hosts: [ "node1.elastic.test.com" ]
+cluster.initial_master_nodes: [ "node1" ]
