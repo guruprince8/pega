@@ -43,3 +43,7 @@ xpack.security.transport.ssl.certificate: /home/guru/pega/certs/tomcat.crt
 xpack.security.transport.ssl.certificate_authorities: /home/guru/pega/certs/ca.crt
 discovery.seed_hosts: [ "node1.elastic.test.com" ]
 cluster.initial_master_nodes: [ "node1" ]
+
+# status commands
+systemctl restart elasticsearch
+
