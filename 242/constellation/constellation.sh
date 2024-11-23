@@ -1,4 +1,4 @@
-docker run -p 3443:3443 -v /Users/gurubrahmanadamekambaram/Desktop/peony/LSA/pega/installations/23/cs/apache-tomcat-9.0.74/certs:/host_folder --name c11n-appstatic pega-docker.downloads.pega.com/constellation-appstatic-service/docker-image:1.5.0-20231012160646 port=3443 root=/usr/src/app/dist urlPath=/c11n-appstatic httpsKey=/host_folder/tomcat.key httpsCert=/host_folder/tomcat.crt
+docker run -p 3443:3443 -v /home/guru/pega/certs:/host_folder --name c11n-appstatic pega-docker.downloads.pega.com/constellation-appstatic-service/docker-image:latest port=3443 root=/usr/src/app/dist urlPath=/c11n-appstatic httpsKey=/host_folder/tomcat.key httpsCert=/host_folder/tomcat.crt
 
 
 
