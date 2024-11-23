@@ -5,7 +5,6 @@
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elastic.gpg
 echo "deb [signed-by=/usr/share/keyrings/elastic.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
 sudo apt update & sudo apt install elasticsearch
-sudo nano /etc/elasticsearch/elasticsearch.yml
 sudo systemctl start elasticsearch
 sudo systemctl enable elasticsearch
 sudo ufw allow from 198.51.100.0 to any port 9200
@@ -30,6 +29,7 @@ curl -X GET -H "Content-Type: application/json" 'http://localhost:9200/tutorial/
 
 # configuring TLS
 # https://www.elastic.co/blog/configuring-ssl-tls-and-https-to-secure-elasticsearch-kibana-beats-and-logstash
+sudo nano /etc/elasticsearch/elasticsearch.yml
 node.name: node1
 network.host: node1.elastic.test.com
 xpack.security.enabled: true
