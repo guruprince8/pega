@@ -1,3 +1,9 @@
+# git clone -b release/24.1.10 https://github.com/pegasystems/react-sdk.git
+# git branch
+# git status
+
+
+
 docker run -p 3443:3443 -v /home/guru/pega/certs:/host_folder --name c11n-appstatic pega-docker.downloads.pega.com/constellation-appstatic-service/docker-image:latest port=3443 root=/usr/src/app/dist urlPath=/c11n-appstatic httpsKey=/host_folder/tomcat.key httpsCert=/host_folder/tomcat.crt
 
 
