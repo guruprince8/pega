@@ -6,6 +6,7 @@ helm inspect values pega/backingservices > backingservices.yaml
 helm repo list
 
 /* DEV Environment */
+kubectl delete namespace pega-dev
 helm uninstall pega-dev --namespace pega-dev
 helm install pega-dev pega/pega --namespace pega-dev --values values-local-dev.yaml
 helm install backingservices pega/backingservices --namespace pegabackingservices --values backingservices.yaml
