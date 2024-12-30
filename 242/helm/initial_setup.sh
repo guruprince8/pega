@@ -9,11 +9,14 @@ helm repo list
 kubectl delete namespace pega-dev
 kubectl create namespace pega-dev
 
+kubectl delete secret pega-registry-secret -n pega-dev
+kubectl apply -f Pega/pega-registry-secret.yaml -n pega-dev
+kubectl get secret pega-registry-secret -n pega-dev --template={{.data}}
+
 kubectl apply -f Pega/pega-db-secret.yaml -n pega-dev
 kubectl get secret pega-db-secret -n pega-dev --template={{.data.DB_USERNAME}} | base64 -d
 
-kubectl apply -f Pega/pega-registry-secret.yaml -n pega-dev
-kubectl get secret pega-registry-secret -n pega-dev --template={{.data}}
+
 
 kubectl apply -f Pega/pega-tls-secret.yaml -n pega-dev
 kubectl get secret pega-tls-secret -n pega-dev --template={{.data}}
