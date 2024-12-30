@@ -11,6 +11,7 @@ kubectl create namespace pega-dev
 
 kubectl delete secret pega-registry-secret -n pega-dev
 kubectl apply -f Pega/pega-registry-secret.yaml -n pega-dev
+kubectl describe secret pega-registry-secret -n pega-dev
 kubectl get secret pega-registry-secret -n pega-dev --template={{.data}}
 
 kubectl apply -f Pega/pega-db-secret.yaml -n pega-dev
