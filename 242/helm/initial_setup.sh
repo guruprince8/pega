@@ -7,6 +7,11 @@ helm repo list
 
 /* DEV Environment */
 kubectl delete namespace pega-dev
+kubectl create namespace pega-dev
+kubectl apply -f Pega/pega-db-secret.yaml -n pega-dev
+kubectl apply -f Pega/pega-registry-secret.yaml -n pega-dev
+kubectl apply -f Pega/pega-tls-secret.yaml -n pega-dev
+kubectl apply -f Pega/pega-kafka-secret.yaml -n pega-dev
 helm uninstall pega-dev --namespace pega-dev
 helm install pega-dev pega/pega --namespace pega-dev --values values-local-dev.yaml
 helm install backingservices pega/backingservices --namespace pegabackingservices --values backingservices.yaml
