@@ -1,0 +1,28 @@
+srs:
+  enabled: true
+  deploymentName: "local-dev-srs"
+  busybox:
+    image: "alpine:3.16.1"
+    imagePullPolicy: ["pega-registry-secret"]
+  srsRuntime:
+    replicaCount: 2
+    srsImage: "pega-docker.downloads.pega.com//platform-services/search-n-reporting-service:1.35.2"
+    env:
+      AuthEnabled: false
+      OAuthPublicKeyURL: ""
+    enableSecureCryptoMode: false
+    javaOpts: ""
+srsStorage:
+    provisionInternalESCluster: false
+    domain: "192.168.1.223"
+    port: 9200
+    protocol: http
+    tls:
+      enabled: false
+    certificateName: ""
+    basicAuthentication:
+      enabled: false 
+    authCredentials:
+      username: ""
+      password: ""    
+    requireInternetAccess: true
