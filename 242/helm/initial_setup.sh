@@ -26,7 +26,7 @@ kubectl apply -f Pega/pega-kafka-secret.yaml -n pega-dev
 kubectl get secret pega-kafka-secret -n pega-dev --template={{.data}}
 
 helm uninstall pega-dev --namespace pega-dev
-helm install pega-dev pega/pega --namespace pega-dev --values values-local-dev.yaml
+helm install pega-dev pega/pega --namespace pega-dev --values Pega/values-local-dev.yaml
 helm install backingservices pega/backingservices --namespace pegabackingservices --values backingservices.yaml
 helm install addons pega/addons --namespace pegaaddons --values addons.yaml
 helm install pega-dev pega/pega --namespace pega-dev --values pega.yaml
