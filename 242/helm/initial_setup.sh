@@ -71,6 +71,10 @@ kubectl exec -it pega-search-0 -n pega-prod -- /bin/sh
 kubectl exec -it pega-minikube-0 -n pega-prod -- /bin/sh
 tail -f /usr/local/tomcat/logs/pega-minikube-0/PegaRULES.log
 
+/* Constellation */
+ kubectl apply -f Constellation/constellation-deployment.yml -n pega-dev
+ docker run -p 3443:3443 -v /pega/certs:/host_folder --name c11n-appstatic pega-docker.downloads.pega.com/constellation-appstatic-service/docker-image:latest port=3443 root=/usr/src/app/dist urlPath=/c11n-appstatic httpsKey=/host_folder/tomcat.key httpsCert=/host_folder/tomcat.crt
+
 
 
 
