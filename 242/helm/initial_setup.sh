@@ -17,6 +17,11 @@ kubectl get secret pega-registry-secret -n pega-dev --template={{.data}}
 kubectl apply -f Pega/pega-db-secret.yaml -n pega-dev
 kubectl get secret pega-db-secret -n pega-dev --template={{.data.DB_USERNAME}} | base64 -d
 
+kubectl apply -f Pega/pega-hz-secret.yaml -n pega-dev
+kubectl get secret pega-hz-secret -n pega-dev --template={{.data.DB_USERNAME}} | base64 -d
+
+
+
 
 
 kubectl apply -f Pega/pega-tls-secret.yaml -n pega-dev
