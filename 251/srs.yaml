@@ -1,0 +1,35 @@
+srs:
+  enabled: true
+  deploymentName: "local-dev-srs"
+  busybox:
+    image: "alpine:3.20.2"
+    imagePullPolicy: "IfNotPresent"
+  srsRuntime:
+    replicaCount: 1
+    srsImage: "guruprince8/search-n-reporting-service:latest"
+    imagePullPolicy: "IfNotPresent"
+    resources:
+      limits:
+        memory: "2Gi"
+      requests:
+        memory: "2Gi"
+    imagePullSecretNames: ["pega-registry-secret"]
+    env:
+      AuthEnabled: false
+      OAuthPublicKeyURL: ""
+  srsStorage:
+    provisionInternalESCluster: false
+    domain: 192.168.1.228
+    port: 9200
+    protocol: https
+    tls:
+      enabled: true
+    certificateName: "certificate.p12"
+    certsSecret: srs-certificates
+    basicAuthentication:
+      enabled: false
+    esCredentials:
+      username: ""
+      password: "" 
+    authSecret: srs-elastic-credentials   
+    requireInternetAccess: false
